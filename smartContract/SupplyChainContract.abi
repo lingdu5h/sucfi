@@ -1,0 +1,215 @@
+[
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "transCnt",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"name": "transData",
+		"outputs": [
+			{
+				"name": "transNo",
+				"type": "string"
+			},
+			{
+				"name": "transMemo",
+				"type": "string"
+			},
+			{
+				"name": "supplier",
+				"type": "address"
+			},
+			{
+				"name": "transTime",
+				"type": "uint256"
+			},
+			{
+				"name": "transValue",
+				"type": "uint256"
+			},
+			{
+				"name": "loanTime",
+				"type": "uint256"
+			},
+			{
+				"name": "loanValue",
+				"type": "uint256"
+			},
+			{
+				"name": "exist",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "queryBalance",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "transNo",
+				"type": "string"
+			},
+			{
+				"name": "transMemo",
+				"type": "string"
+			},
+			{
+				"name": "supplier",
+				"type": "address"
+			},
+			{
+				"name": "transValue",
+				"type": "uint256"
+			}
+		],
+		"name": "insSupplyTrans",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [
+			{
+				"name": "transKey",
+				"type": "uint256"
+			}
+		],
+		"name": "isTransExist",
+		"outputs": [
+			{
+				"name": "",
+				"type": "bool"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "transKey",
+				"type": "uint256"
+			},
+			{
+				"name": "loanValue",
+				"type": "uint256"
+			}
+		],
+		"name": "loanEth",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": false,
+		"inputs": [
+			{
+				"name": "_factory",
+				"type": "address"
+			}
+		],
+		"name": "setFactory",
+		"outputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "bank",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"constant": true,
+		"inputs": [],
+		"name": "queryFactory",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": false,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"payable": false,
+		"stateMutability": "nonpayable",
+		"type": "constructor"
+	},
+	{
+		"payable": true,
+		"stateMutability": "payable",
+		"type": "fallback"
+	},
+	{
+		"anonymous": false,
+		"inputs": [
+			{
+				"indexed": true,
+				"name": "eventType",
+				"type": "string"
+			},
+			{
+				"indexed": false,
+				"name": "transCnt",
+				"type": "uint256"
+			}
+		],
+		"name": "InsTransEvt",
+		"type": "event"
+	}
+]

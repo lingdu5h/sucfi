@@ -15,3 +15,5 @@
 5.供货商得到以加密货币支付的贷款款项(真实世界可采用法币拨款)。
 
 ## 流程图
+
+![](https://github.com/lingdu5h/sucfi/blob/main/%E6%B5%81%E7%A8%8B%E5%9B%BE.png)
